@@ -8,7 +8,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { client, urlFor } from "../client";
 import { fetchUser } from "../utils/fetchUser";
 
-const Pin = ({ pin, className }) => {
+const Pin = ({ pin }) => {
   const [postHovered, setPostHovered] = useState(false);
   const { postedBy, image, _id, destination, save } = pin;
   const navigate = useNavigate();
@@ -107,7 +107,7 @@ const Pin = ({ pin, className }) => {
         )}
       </div>
       <Link to={`user-profile/${user?._id}`} className="flex gap-2 mt-2 items-center">
-        <img className="w-8 h-8 rounded-full object-cover" src={postedBy?.image} alt="user-profule" />
+        <img className="w-8 h-8 rounded-full object-cover" src={postedBy?.image} alt="user-profile" />
         <p className="font-semibold capitalize">{postedBy?.userName}</p>
       </Link>
     </div>

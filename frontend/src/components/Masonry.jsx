@@ -17,7 +17,7 @@ const MasonryLayout = ({ pins }) => {
 	breakpointCols={breakpointObj}
 	>
 		{pins?.map(pin => (
-			<Pin key={pin?._id} pin={pin} className="w-max" />
+			<Pin key={pin?._id} pin={pin} />
 		))}
 	</Masonry>;
 };
