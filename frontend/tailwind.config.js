@@ -30,6 +30,9 @@ module.exports = {
       flex: {
         0.7: "0.7 1 0%",
       },
+      maxWidth: {
+        1500: "1500px",
+      },
       maxHeight: {
         370: "370px",
       },
@@ -37,6 +40,9 @@ module.exports = {
         210: "210px",
         350: "350px",
         620: "620px",
+      },
+      borderRadius: {
+        "4xl": "2rem",
       },
       textColor: {
         lightGray: "#F1EFEE",

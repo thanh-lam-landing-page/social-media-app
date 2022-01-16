@@ -88,7 +88,7 @@ const Pin = ({ pin }) => {
                   rel="noreferrer"
                   className="bg-white flex items-center gap-2 text-black font-bold p-2 pl-4 pr-4 rounded-full opacity-70 hover:opacity-100 hover:shadow-md transition duration-150">
                   <BsFillArrowRightCircleFill />
-                  {destination.length > 20 ? destination.slice(8, 20) : destination.slice(8)}
+                  {destination.length > 15 ? `${destination.slice(0, 15)}...` : destination}
                 </a>
               )}
               {postedBy?._id === user.googleId && (
