@@ -196,7 +196,7 @@ export const userCreatedPinsQuery = (userId) => {
 }
 
 export const userSavedPinsQuery = (userId) => {
-  const query = `*[_type == "pin" && "${userId} in save[].userId"] | order(_createdAt desc){
+  const query = `*[_type == "pin" && "${userId}" in save[].userId] | order(_createdAt desc){
     image {
       asset->{
         url
